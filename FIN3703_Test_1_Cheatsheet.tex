@@ -12,15 +12,22 @@
 \usepackage[framemethod=tikz]{mdframed}
 % \usepackage{microtype}
 \usepackage{pdfpages}
+\usepackage{titlesec}
 
 \usepackage[most]{tcolorbox}
 \tcbuselibrary{skins,breakable}
 \newtcolorbox{callout}[1][]{breakable,sharp corners, skin=enhancedmiddle jigsaw,parbox=false,
-boxrule=0mm,leftrule=2mm,boxsep=0mm,arc=0mm,outer arc=0mm}
+boxrule=0mm,leftrule=1mm,boxsep=0mm,arc=0mm,outer arc=0mm}
 
 % Add these lines to create and style the column separators
 \setlength{\columnseprule}{0.4pt} % Width of the rule
 \setlength{\columnsep}{20pt} % Space between columns
+
+\renewcommand{\baselinestretch}{0.5} % line spacing
+\parskip=0.25pt % paragraph spacing
+
+% \titleformat*{\section}{\normalsize\bfseries}
+% \titleformat*{\subsection}{\small\bfseries}
 
 \begin{document}
 %\footnotesize
@@ -30,6 +37,6 @@ boxrule=0mm,leftrule=2mm,boxsep=0mm,arc=0mm,outer arc=0mm}
 \begin{multicols*}{3}
     \input{sections/intro_to_financial_markets}
     \input{sections/financial_institutions}
-
+    \input{sections/banks}
 \end{multicols*}
 \end{document}
