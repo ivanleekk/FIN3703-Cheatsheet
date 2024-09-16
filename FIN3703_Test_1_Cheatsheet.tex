@@ -1,0 +1,33 @@
+\documentclass[landscape,a4paper]{article}
+\usepackage[utf8]{inputenc}
+% \usepackage[T1]{fontenc}
+\usepackage{tikz}
+\usepackage{parskip} 
+\usetikzlibrary{shapes,positioning,arrows,fit,calc,graphs,graphs.standard}
+% \usepackage[nosf]{kpfonts}
+% \usepackage[t1]{sourcesanspro}
+\usepackage{multicol}
+\usepackage{wrapfig}
+\usepackage[top=5mm,bottom=5mm,left=5mm,right=5mm]{geometry}
+\usepackage[framemethod=tikz]{mdframed}
+% \usepackage{microtype}
+\usepackage{pdfpages}
+
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\newtcolorbox{callout}[1][]{breakable,sharp corners, skin=enhancedmiddle jigsaw,parbox=false,
+boxrule=0mm,leftrule=2mm,boxsep=0mm,arc=0mm,outer arc=0mm}
+
+% Add these lines to create and style the column separators
+\setlength{\columnseprule}{0.4pt} % Width of the rule
+\setlength{\columnsep}{20pt} % Space between columns
+
+\begin{document}
+%\footnotesize
+\scriptsize
+% \setlength{\parindent}{0pt}
+\begin{multicols*}{3}
+    \input{sections/intro_to_financial_markets}
+
+\end{multicols*}
+\end{document}
