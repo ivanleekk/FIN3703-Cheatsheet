@@ -19,6 +19,10 @@ Duration (D) = $\frac{\sum^{T}_{t=1}{[t \times PVCF_t]}}{\sum^{T}_{t=1}{[PVCF_t]
 
 Modified Duration (ModD) = $\frac{Duration (D)}{1 + i_0}$, where $i_0$ is the discount rate
 
+\begin{callout}
+	For a portfolio of bonds, the discount rate used can be the yield to maturity of the portfolio, i.e. the weighted average yield of the bonds in the portfolio.
+\end{callout}
+
 Percentage Change in Price = -ModD $\times \Delta i$
 
 Dollar Change in Price = -ModD $\times \Delta i \times P_0$, where $P_0$ is the initial price
@@ -47,6 +51,12 @@ In the specified timeframe, interest payments are exchanged, but no principal is
 
 Swaps for balance sheet hedge is between two parties, one who wants a fixed (swap rate) and another that wants a floating rate (SORA/SOFR).
 The difference is that the interest payments are only exchanged at a fixed date or specified dates
+
+\begin{callout}
+	SOFR Futures are named based on the month they begin, e.g. Mar SR3 is valid from March to June.
+
+	If interest rates rise, SOFR Futures will fall, and vice versa.
+\end{callout}
 
 SOFR is the Secured Overnight Financing Rate, which is the rate at which banks lend to each other overnight, and is the replacement for LIBOR.
 Calculated as the volume-weighted median of transaction-level data from the previous day
