@@ -22,23 +22,31 @@
 \tcbuselibrary{skins,breakable}
 \newtcolorbox{callout}[1][]{breakable,sharp corners, skin=enhancedmiddle jigsaw,parbox=false,
 boxrule=0mm,leftrule=1mm,boxsep=0mm,arc=0mm,outer arc=0mm}
+\usepackage{enumitem}
 
 % Add these lines to create and style the column separators
 \setlength{\columnseprule}{0.4pt} % Width of the rule
 \setlength{\columnsep}{20pt} % Space between columns
+
+
+\titlespacing\section{0pt}{2pt plus 0pt minus 0pt}{0pt plus 0pt minus 0pt}
+\titlespacing\subsection{0pt}{2pt plus 0pt minus 0pt}{0pt plus 0pt minus 0pt}
+\titlespacing\subsubsection{0pt}{2pt plus 0pt minus 0pt}{0pt plus 0pt minus 0pt}
 
 \renewcommand{\baselinestretch}{0.5} % line spacing
 \parskip=0.25pt % paragraph spacing
 % \setlength\extrarowheight{5pt} % table row height
 \renewcommand{\arraystretch}{1.5}
 % \centering
-% \titleformat*{\section}{\normalsize\bfseries}
-% \titleformat*{\subsection}{\small\bfseries}
+\titleformat*{\section}{\normalsize\bfseries}
+\titleformat*{\subsection}{\small\bfseries}
+\titleformat*{\subsubsection}{\small\bfseries}
+\setlist[itemize]{noitemsep}
 
 \begin{document}
-%\footnotesize
+\footnotesize % 9pt
 % \scriptsize % 7pt
- \tiny % 5pt
+% \tiny % 5pt
 % \setlength{\parindent}{0pt}
 \begin{multicols*}{3}
     \input{sections/equity_market}
